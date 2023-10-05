@@ -1,0 +1,33 @@
+<section class="page-section" id="{{ site.data.sitetext[site.locale].download.section | default: "download" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].download.title | default: "Download" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].download.body | markdownify }}</div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <a href="https://github.com/praisenter/praisenter/releases/tag/Windows-latest" target="_blank">
+          <img src="/assets/img/brands/windows.png" height="128" />
+          <h4 class="service-heading">{{ site.data.sitetext[site.locale].download.windows.title | markdownify }}</h4>
+        </a>
+          <div class="text-muted">{{ site.data.sitetext[site.locale].download.windows.requirements | markdownify }}</div>
+        <a href="/install#windows">Install help</a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://github.com/praisenter/praisenter/releases/tag/Ubuntu-latest" target="_blank">
+          <img src="/assets/img/brands/ubuntu.png" height="128" />
+          <h4 class="service-heading">{{ site.data.sitetext[site.locale].download.ubuntu.title | markdownify }}</h4>
+        </a>
+          <div class="text-muted">{{ site.data.sitetext[site.locale].download.ubuntu.requirements | markdownify }}</div>
+          <a href="/install#ubuntu">Install help</a>
+      </div>
+    </div>
+  </div>
+</section>

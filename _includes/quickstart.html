@@ -1,0 +1,121 @@
+<!-- About -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+  <section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].quickstart.section | default: "about" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].quickstart.title | markdownify | default: "About" }}</h2>
+          <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].quickstart.text | default: "quickstart"}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="quickstart">
+      {%- assign align = site.data.sitetext[site.locale].quickstart.start_align -%}
+      {%- for event in site.data.sitetext[site.locale].quickstart.events -%}
+            {%- if align == "right" -%}
+              {%- if event.align and event.align == "left" -%}
+                {%- assign align = "right" -%}
+                <li>
+              {%- else -%}
+                {%- assign align = "left" %}
+                <li class="quickstart-inverted">
+              {% endif %}
+            {% else %}
+              {%- if event.align and event.align == "right" -%}
+                {%- assign align = "left" -%}
+                <li class="quickstart-inverted">
+              {%- else -%}
+                {%- assign align = "right" %}
+                <li>
+              {% endif %}
+            {%- endif -%}
+              <div class="quickstart-image">
+                <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+              </div>
+              <div class="quickstart-panel">
+                <div class="quickstart-heading">
+                  <h4>{{ event.year | markdownify }}</h4>
+                  <h4 class="subheading">{{ event.title }}</h4>
+                </div>
+                <div class="quickstart-body">
+                  <div class="text-muted">{{ event.desc | markdownify }}</div>
+                </div>
+              </div>
+            </li>
+		  {% endfor %}	
+            
+		  {% if site.data.sitetext[site.locale].quickstart.end %}	
+			<li class="quickstart-inverted">
+              <div class="quickstart-image">
+                <h4>{{ site.data.sitetext[site.locale].quickstart.end }}</h4>
+              </div>
+            </li>
+		  {% endif %}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% else %}
+<section class="bg-light page-section" id="{{ site.data.sitetext.quickstart.section | default: "about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.quickstart.title | markdownify | default: "About" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext.quickstart.text | default: "quickstart"}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="quickstart">
+    {%- assign align = site.data.sitetext.quickstart.start_align -%}
+    {%- for event in site.data.sitetext.quickstart.events -%}
+          {%- if align == "right" -%}
+            {%- if event.align and event.align == "left" -%}
+              {%- assign align = "right" -%}
+              <li>
+            {%- else -%}
+              {%- assign align = "left" %}
+              <li class="quickstart-inverted">
+            {% endif %}
+          {% else %}
+            {%- if event.align and event.align == "right" -%}
+              {%- assign align = "left" -%}
+              <li class="quickstart-inverted">
+            {%- else -%}
+              {%- assign align = "right" %}
+              <li>
+            {% endif %}
+          {%- endif -%}
+            <div class="quickstart-image">
+              <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+            </div>
+            <div class="quickstart-panel">
+              <div class="quickstart-heading">
+                <h4>{{ event.year | markdownify }}</h4>
+                <h4 class="subheading">{{ event.title }}</h4>
+              </div>
+              <div class="quickstart-body">
+                <div class="text-muted">{{ event.desc | markdownify }}</div>
+              </div>
+            </div>
+          </li>
+    {% endfor %}	
+          
+    {% if site.data.sitetext.quickstart.end %}	
+    <li class="quickstart-inverted">
+            <div class="quickstart-image">
+              <h4>{{ site.data.sitetext.quickstart.end }}</h4>
+            </div>
+          </li>
+    {% endif %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End About -->

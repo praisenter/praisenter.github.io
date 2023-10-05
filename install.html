@@ -1,0 +1,139 @@
+---
+layout: page
+title: Install help
+background: grey
+---
+
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-heading text-uppercase">Install help</h2>
+        <p>
+          Praisenter installation isn't the most straight forward. There are 2-3 steps and some of those steps scare off
+          potential users due to security concerns. All of these short comings could be resolved by signing Praisenter 
+          with a certificate issued from a valid root certificate authority.  Unfortunately, this isn't cheap. 
+          That said, we are looking into other deployment options to avoid the cost in the future.
+        </p>
+        <p>
+          NOTE: Always double/triple check <i>what</i> you are downloading and <i>from where</i>.
+          <br/>
+          <br/>
+        </p>
+        <h4>Table of Contents</h4>
+        <p>
+          <ul>
+            <li>
+              Windows
+              <ul>
+                <li><a href="#windows-download-blocked">Download Blocked / Pending</a></li>
+                <li><a href="#windows-unrecognized-app">Unrecognized App</a></li>
+                <li><a href="#windows-uac">User Account Control</a></li>
+              </ul>
+            </li>
+            <li>
+              Ubuntu
+              <ul>
+                <li>Coming Soon...</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <br />
+        <br />
+
+        <!-- Windows header -->
+        <div>
+          <h3 class="section-heading text-uppercase"><a href="#windows" id="windows">#</a> Windows</h3>
+          <p>You must be running Windows 10 or higher. You must also have the necessary privileges to download, run, and install programs.</p>
+          <br />
+        </div>
+        <!-- Download failed or pending -->
+        <div>
+          <h4 class="section-heading text-uppercase"><a href="#windows-download-blocked" id="windows-download-blocked">#</a> Download Blocked / Pending</h4>
+          <p>
+            <img src="/assets/img/install/chrome-download-prompt.png" />
+            <br /><br />
+            This message means that your browser doesn't trust the file you are downloading. First, make sure you are downloading 
+            from the correct place and on a secure connection:
+            <ol>
+              <li>Make sure you are downloading Praisenter from <a href="https://github.com/praisenter/praisenter/releases/tag/Windows-latest">https://github.com/praisenter/praisenter/releases/tag/Windows-latest</a></li>
+              <li>Make sure your connection is secure <img src="/assets/img/install/secure-connection.png" /></li>
+            </ol>
+            Once you confirm you are downloading from the correct place and your connection is secure, you can click the "Keep anyway" button
+            which will allow your browser to download the file.
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+        <!-- Unrecognized app -->
+        <div>
+          <h4 class="section-heading text-uppercase"><a href="#windows-unrecognized-app" id="windows-unrecognized-app">#</a> Unrecognized App</h4>
+          <p>
+            <img src="/assets/img/install/unrecognized-app.png" />
+            <br /><br />
+            This message means that Windows can't verify the publisher of Praisenter. This is due to it being downloaded from the internet and because
+            Praisenter is not signed (as described at the top of this page).
+          </p>
+          <p>
+            First, make sure that you downloaded the correct file. Praisenter is only released from <a href="https://github.com/praisenter/praisenter/releases/tag/Windows-latest">this website</a>.
+            Once you confirm you've downloaded the correct file, you have two options:
+          </p>
+          <p>
+            <ol>
+              <li>
+                Click the "More info" link in the popup above.
+                <ol>
+                  <li>A new button should show up called "Run anyway"</li>
+                  <li>Click the "Run anyway" button</li>
+                </ol>
+              </li>
+              <li>
+                Unblock the file
+                <ol>
+                  <li>Close out of the popup above (by clicking the X or "Don't run")</li>
+                  <li>Find the installer file</li>
+                  <li>Right click on it and choose the Properties menu option</li>
+                  <li>On the General tab you should see a checkbox that says Unblock, check it, then click Ok (see screenshot below)</li>
+                  <li>Double click the file again to run the installer</li>
+                </ol>
+              </li>
+            </ol>
+            <img src="/assets/img/install/unblock.png" />
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+        <!-- Install warning -->
+        <div>
+          <h4 class="section-heading text-uppercase"><a href="#windows-uac" id="windows-uac">#</a> User Account Control</h4>
+          <p>
+            <img src="/assets/img/install/uac.png" />
+            <br /><br />
+            This message means that Windows can't verify the publisher of Praisenter. This is due to it being downloaded from the internet and because
+            Praisenter is not signed (as described at the top of this page).
+          </p>
+          <p>
+            First, make sure that you downloaded the correct file. Praisenter is only released from <a href="https://github.com/praisenter/praisenter/releases/tag/Windows-latest">this website</a>.
+            Once you confirm you've downloaded the correct file, just click "Yes" to continue.
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+        <br />
+        <br />
+
+        <!-- Ubuntu header -->
+        <div>
+          <h3 class="section-heading text-uppercase"><a href="#ubuntu" id="ubuntu">#</a> Ubuntu</h3>
+          <p>You must be running Ubuntu 11.10 x64 or higher. You must also have the necessary privileges to download, run, and install programs.</p>
+          <br />
+        </div>
+        <!-- TODO Ubuntu install help -->
+      </div>
+    </div>
+  </div>
+</section>
