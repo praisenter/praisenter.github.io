@@ -2,12 +2,12 @@
 caption: #what displays in the portfolio grid:
   title: Control
   subtitle: Display unique content on each display
-  thumbnail: assets/img/features/multiple-displays.png
+  thumbnail: assets/img/features/multiple-display.png
   
 #what displays when the item is clicked:
 title: Control
 subtitle: Display unique content on each display
-image: assets/img/features/multiple-displays.png #main image, can be a link or a file in assets/img/portfolio
+image: assets/img/features/multiple-display.png #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
   
 ---
