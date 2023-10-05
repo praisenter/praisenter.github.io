@@ -1,3 +1,6 @@
+# praisenter.github.io
+Jekyll based site for Praisenter
+
 ## For reference
 Adapted and updated from these two repos.  Pulled in template assets, replaced some with source startbootstrap project assests, use CDNs for all 3rd party libraries, etc.
 https://github.com/raviriley/agency-jekyll-theme
