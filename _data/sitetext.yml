@@ -43,13 +43,13 @@ en: &DEFAULT_EN
     section: download
     ubuntu: 
       title: Ubuntu
-      requirements: "Ubuntu 11.10 x64 or higher"
+      requirements: "Ubuntu 22.04 x64 or higher"
     windows: 
       title: Windows
       requirements: "Windows 10 x64 or higher"
     macos:
       title: MacOS
-      requirements: "Mac OS X 10.7.3 x64 or higher (M1?)"
+      requirements: "MacOS 11 x64 or higher"
 
   quickstart:
     title: "Quick start"
