@@ -60,7 +60,7 @@ en: &DEFAULT_EN
     events:
       - title: "Download"
         year: ""
-        desc: "Download the <a href='https://github.com/praisenter/praisenter/releases/tag/windows-latest' target='_blank'>Windows</a> or <a href='https://github.com/praisenter/praisenter/releases/tag/ubuntu-latest' target='_blank'>Ubuntu</a> installer from the releases page on the GitHub site.  For Windows, download the .msi file.  For Ubuntu download the .deb file."
+        desc: "Download the <a href='https://github.com/praisenter/praisenter/releases/tag/latest' target='_blank'>Windows</a> (.msi) or <a href='https://github.com/praisenter/praisenter/releases/tag/latest' target='_blank'>Ubuntu</a> (.deb) installer from the releases page on the GitHub site.  For Windows, download the .msi file.  For Ubuntu download the .deb file."
         image: assets/img/quickstart/msi.png
         alt:
       - title: "Install"
