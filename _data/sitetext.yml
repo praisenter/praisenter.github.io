@@ -58,15 +58,10 @@ en: &DEFAULT_EN
     # left is the default
     #start_align: "left"
     events:
-      - title: "Download"
-        year: ""
-        desc: "Download the <a href='https://github.com/praisenter/praisenter/releases/tag/latest' target='_blank'>Windows</a> (.msi) or <a href='https://github.com/praisenter/praisenter/releases/tag/latest' target='_blank'>Ubuntu</a> (.deb) installer from the releases page on the GitHub site.  For Windows, download the .msi file.  For Ubuntu download the .deb file."
-        image: assets/img/quickstart/msi.png
-        alt:
       - title: "Install"
         year: ""
-        desc: "For Windows, right click on the .msi file and unblock it. Then double click the installer and follow the prompts. See the <a href='/install'>install help</a> for more details."
-        image: assets/img/quickstart/unblock.png
+        desc: "Install Praisenter using the Microsoft Store for Windows or the SnapStore for Ubuntu using the links above."
+        image: assets/img/quickstart/msi.png
         alt:
       - title: "Setup a workspace"
         year: ""

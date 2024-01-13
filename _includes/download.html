@@ -13,20 +13,28 @@
     <div class="row text-center">
       <div class="col-md-2"></div>
       <div class="col-md-4">
-        <a href="https://github.com/praisenter/praisenter/releases/tag/latest" target="_blank">
-          <img src="/assets/img/brands/windows.png" height="128" style="margin-bottom: 10px;" />
-          <h4 class="service-heading">{{ site.data.sitetext[site.locale].download.windows.title }} (.msi)</h4>
-        </a>
-          <div class="text-muted">{{ site.data.sitetext[site.locale].download.windows.requirements | markdownify }}</div>
-        <a href="/install#windows">Install help</a>
+        <div style="margin-bottom: 15px;"><img src="/assets/img/brands/windows.png" height="128" /></div>
+        <div class="text-muted">{{ site.data.sitetext[site.locale].download.windows.requirements | markdownify }}</div>
+        <div style="margin-bottom: 15px; height: 75px;">
+          <a href="https://apps.microsoft.com/detail/Praisenter/9PHHWB94W800?launch=true&mode=mini">
+            <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+          </a>
+        </div>
+        <div>
+          Alternatively you can <a href="https://github.com/praisenter/praisenter/releases/tag/latest" target="_blank">download an .msi</a> and use the <a href="/install#windows">install help</a> to install it manually
+        </div>
       </div>
       <div class="col-md-4">
-        <a href="https://github.com/praisenter/praisenter/releases/tag/latest" target="_blank">
-          <img src="/assets/img/brands/ubuntu.png" height="128" style="margin-bottom: 10px;" />
-          <h4 class="service-heading">{{ site.data.sitetext[site.locale].download.ubuntu.title }} (.deb)</h4>
-        </a>
-          <div class="text-muted">{{ site.data.sitetext[site.locale].download.ubuntu.requirements | markdownify }}</div>
-          <a href="/install#ubuntu">Install help</a>
+        <div style="margin-bottom: 15px;"><img src="/assets/img/brands/ubuntu.png" height="128" /></div>
+        <div class="text-muted">{{ site.data.sitetext[site.locale].download.ubuntu.requirements | markdownify }}</div>
+        <div style="margin-bottom: 15px; height: 75px;">
+          <a href="https://snapcraft.io/praisenter">
+            <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" height="65" />
+          </a>
+        </div>
+        <div>
+          Alternatively you can <a href="https://github.com/praisenter/praisenter/releases/tag/latest" target="_blank">download an .deb</a> and use the <a href="/install#ubuntu">install help</a> to install it manually
+        </div>
       </div>
     </div>
   </div>
