@@ -144,7 +144,9 @@ en: &DEFAULT_EN
 
   help:
     title: "Need help?"
-    text: "Read over the <a href='/install'>install help</a>, open a <a href='https://github.com/praisenter/praisenter/discussions'>discussion</a> topic, or review the known <a href='https://github.com/praisenter/praisenter/issues'>issues</a> list"
+    text: "Read over the <a href='https://manual.praisenter.org'>user manual</a>, open a <a href='https://github.com/praisenter/praisenter/discussions'>discussion</a> topic, or review the known <a href='https://github.com/praisenter/praisenter/issues'>issues</a> list"
+    manual: "User Manual"
+    manual-url: https://manual.praisenter.org
     discussions: "Discussions"
     discussions-url: https://github.com/praisenter/praisenter/discussions
     issues: "Issues"

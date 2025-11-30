@@ -19,6 +19,8 @@ en: &DEFAULT_EN
       section: download
     - title: "Quickstart"
       section: quickstart
+    - title: "User Manual"
+      url: https://manual.praisenter.org
     # - title: "Team"
     #   section: team
     - title: "Help"
