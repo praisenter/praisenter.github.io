@@ -39,7 +39,7 @@ en: &DEFAULT_EN
 
   download:
     title: "Download"
-    body: "Praisenter is currently packaged for Windows and Ubuntu only.  MacOS builds are currently not available.  If you are feeling adventurous, you can try to build Praisenter yourself by cloning the [GitHub repo](https://github.com/praisenter/praisenter)."
+    body: "Praisenter is available on the Windows, Snap, and macOS app stores.  Using the app store is the safest way to ensure you get an official version of Praisenter.  Praisenter can also be downloaded from the [project site under the Releases section](https://github.com/praisenter/praisenter/releases), but these builds require more steps to install properly.  If you need help with manual install steps, see [this article](https://praisenter.org/install).  Praisenter is open source, so if none of the options above work for you, you can always try building Praisenter yourself by cloning the [GitHub repo](https://github.com/praisenter/praisenter)."
     section: download
     ubuntu: 
       title: Ubuntu
@@ -48,8 +48,8 @@ en: &DEFAULT_EN
       title: Windows
       requirements: "Windows 10 x64 or higher"
     macos:
-      title: MacOS
-      requirements: "MacOS 11 x64 or higher"
+      title: macOS
+      requirements: "macOS Catalina (10.15) or higher"
 
   quickstart:
     title: "Quick start"
